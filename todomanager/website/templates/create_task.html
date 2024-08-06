@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+<h1 style="color: #155df8;">Create Task</h1>
+
+
+<form method="POST"  action="{% url 'create' %}">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="btn btn-success" >Create</button>
+</form>
+<br/>
+</div>
+{% endblock content %}
