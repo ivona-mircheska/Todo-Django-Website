@@ -1,0 +1,8 @@
+.row.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card.h-100 {
+    height: 100%;
+}
